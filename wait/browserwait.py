@@ -24,7 +24,7 @@ class BrowserWait(Wait):
     def _is_file_downloaded(self):
         """Checks Google Chrome's downloads page to see if the latest element's state is 'COMPLETE' if so,
         returns the file path. """
-        self.browser.go_to('chrome://downloads')
+        self.browser.get('chrome://downloads')
         return self.browser.execute_script("""
         var items = document.querySelector('downloads-manager')
             .shadowRoot.querySelector('#downloadsList').items;
