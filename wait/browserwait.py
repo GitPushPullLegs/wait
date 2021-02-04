@@ -3,7 +3,12 @@ from .wait import Wait
 
 class BrowserWait(Wait):
 
-    def __init__(self, driver, **kwargs):
+    def __init__(self, driver=None, **kwargs):
+        """
+        Instantiates a new BrowserWait instance.
+        :param driver: The selenium driver to use, unnecessary if executing methods from the superclass, Wait.
+        :param kwargs: The Wait argument.
+        """
         super().__init__(**kwargs)
         self.driver = driver
 
