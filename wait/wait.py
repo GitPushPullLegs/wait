@@ -29,4 +29,4 @@ class Wait:
             if time.time() > end_time:
                 break
 
-        raise TimeoutError(f"Wait timed out. Exceptions: {self.__exceptions if self.__exceptions else 'None'}")
+        raise TimeoutError(f"Wait timed out. Exceptions: {'None' if not self.__exceptions else self.__exceptions}")
