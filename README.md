@@ -15,7 +15,7 @@ def function_that_needs_to_return():
     if randrange(10) == 2:
         return "It's 2!"
 
-result = Wait(timeout=60, poll_frequency=1.5).until(function_that_needs_to_return) 
+result = Wait(timeout=60, poll_frequency=1.5).until(function_that_needs_to_return)  # Notice the lack of ().
 print(result)
 ```
 
