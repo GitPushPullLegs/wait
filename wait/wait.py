@@ -2,7 +2,7 @@ import time
 
 
 class Wait:
-    def __init__(self, timeout: int = 120, poll_frequency: int = 0.5):
+    def __init__(self, timeout: int = 120, poll_frequency: float = 0.5):
         self.timeout = timeout
         self.poll_frequency = poll_frequency if poll_frequency > 0 else 0.5
         self.__exceptions = []
