@@ -1,9 +1,8 @@
 from setuptools import setup
-from wait import __version__
 
 setup(
     name='wait',
-    version=__version__,
+    version='0.0.3',
     description='A package to wait for a process to return.',
     url='https://github.com/GitPushPullLegs/wait',
     author='Joe Aguilar',
